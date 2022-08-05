@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  margin: 5px 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  margin: 0 auto;
+  width: 25%;
+  min-width: 350px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 90%;
+  padding: 5px;
+  margin: 2px;
+  border: 1px solid black;
+}
+
+.cart {
+  flex-direction: column;
+  flex: 100%;
+}
+
+.item {
+  margin: 3px 5px;
+  display: flex;
+  flex: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item input {
+  margin-left: 10px;
+  justify-content: center;
+  text-align: center;
+  width: 20px;
+  border-radius: 5px;
+}
+
+.headerCart {
+  flex: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.footerCart {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.footerCart > div {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  margin: 20px 5px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.footerCart > div span:first-child {
+  flex: 3 1 0;
+}
+
+.calculate {
+  border: none;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(35 211 35);
+  width: 97%;
+  padding: 5px 0;
+}
+
+.calculate:disabled {  
+  background-color: rgb(131, 203, 131);
+}
+
+.subtotal,
+.taxes,
+.total {
+  flex-grow: 1;
+}
